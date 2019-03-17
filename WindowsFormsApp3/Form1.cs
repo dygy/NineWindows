@@ -13,7 +13,6 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-       
         Form2 form2 = new Form2();
         Form3 form3 = new Form3();
         Form4 form4 = new Form4();
@@ -22,24 +21,25 @@ namespace WindowsFormsApp3
         Form7 form7 = new Form7();
         Form8 form8 = new Form8();
         Form9 form9 = new Form9();
+
         public Form1()
         {
             InitializeComponent();
             
             form2.Show();
-            
+            Thread.Sleep(3000);
             form3.Show();
-            
+            Thread.Sleep(3000);
             form4.Show();
-            
+            Thread.Sleep(3000);
             form5.Show();
-            
+            Thread.Sleep(3000);
             form6.Show();
-            
+            Thread.Sleep(3000);
             form7.Show();
-            
+            Thread.Sleep(3000);
             form8.Show();
-            
+            Thread.Sleep(3000);
             form9.Show();
             
         }
@@ -50,6 +50,7 @@ namespace WindowsFormsApp3
             Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
             button1.BackColor = randomColor;
         }
+
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == (Keys.Alt | Keys.D1))
